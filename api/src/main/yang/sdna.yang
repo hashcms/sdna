@@ -1,0 +1,18 @@
+module sdna {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:sdna";
+    prefix "sdna";
+
+    revision "2015-01-05" {
+        description "Initial revision of sdna model";
+    }
+    rpc hello-sdna {
+        output {
+
+            leaf status {
+                type string;
+                description "keeplive status.";
+            }
+        }
+    }
+}
